@@ -33,6 +33,8 @@ jobs:
           path: public/
 
   Build-Docker-Image:
+    permissions:
+      packages: write
     runs-on: ubuntu-latest
     needs: build
     name: Build image and store in GitHub Packages
